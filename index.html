@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Pico y Placa Medellín</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/picoyplaca-demo/favicon.ico"/>  <meta name="theme-color" content="#0d1117" />
+    <meta name="description" content="¿Hoy puede salir? Pico y placa de Medellín para carros y motos." />
+    <style>
+      body { background: #0d1117; }
+      /* En el computador, encuadrada como un teléfono; en el teléfono, a pantalla completa. */
+      @media (min-width: 560px) {
+        body { display: grid; place-items: center; padding: 24px 0; }
+        #root {
+          width: 420px; height: min(900px, calc(100vh - 48px));
+          flex: none; border-radius: 28px; overflow: hidden;
+          border: 1px solid #262c36; box-shadow: 0 24px 60px rgba(0,0,0,.6);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/picoyplaca-demo/_expo/static/js/web/index-05c92fc6c24c811287aacc39e038dedc.js" defer></script>
+</body>
+</html>
