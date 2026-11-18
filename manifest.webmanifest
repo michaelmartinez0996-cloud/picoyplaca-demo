@@ -1,0 +1,15 @@
+{
+  "name": "Pico y Placa Medellín",
+  "short_name": "Pico y Placa",
+  "description": "¿Hoy puedes salir? Pico y placa de Medellín para carros y motos.",
+  "lang": "es-CO",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "48x48 64x64 128x128", "type": "image/x-icon" }
+  ]
+}

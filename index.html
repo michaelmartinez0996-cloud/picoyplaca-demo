@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Pico y Placa Medellín</title>
+    <title>Pico y Placa Medellín · ¿hoy puedes salir?</title>
     <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
       /* These styles make the body full-height */
@@ -23,17 +23,36 @@
         flex: 1;
       }
     </style>
-  <link rel="icon" href="/picoyplaca-demo/favicon.ico"/>  <meta name="theme-color" content="#0d1117" />
-    <meta name="description" content="¿Hoy puede salir? Pico y placa de Medellín para carros y motos." />
+  <link rel="icon" href="/picoyplaca-demo/favicon.ico"/>  <meta name="description" content="Escribe tu placa y te decimos si hoy puedes salir en Medellín. Los carros van por el último dígito y las motos por el primero. Gratis, sin cuenta y sin anuncios." />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Pico y Placa" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pico y Placa Medellín" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="¿Hoy puedes salir? · Pico y Placa Medellín" />
+    <meta property="og:description" content="Escribe tu placa y te decimos si hoy puedes salir en Medellín. Los carros van por el último dígito y las motos por el primero. Gratis, sin cuenta y sin anuncios." />
+    <meta property="og:url" content="https://michaelmartinez0996-cloud.github.io/picoyplaca-demo/" />
+    <meta property="og:image" content="https://michaelmartinez0996-cloud.github.io/picoyplaca-demo/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <style>
-      body { background: #0d1117; }
-      /* En el computador, encuadrada como un teléfono; en el teléfono, a pantalla completa. */
+      html, body { background: #000; }
+      /* En el computador va encuadrada como un teléfono, que es la forma en
+         que está diseñada; estirada de lado a lado se ve rota. En el teléfono,
+         a pantalla completa. */
       @media (min-width: 560px) {
-        body { display: grid; place-items: center; padding: 24px 0; }
+        body {
+          display: grid; place-items: center; padding: 28px 0;
+          background: radial-gradient(ellipse at top, #141416 0%, #000 62%);
+        }
         #root {
-          width: 420px; height: min(900px, calc(100vh - 48px));
-          flex: none; border-radius: 28px; overflow: hidden;
-          border: 1px solid #262c36; box-shadow: 0 24px 60px rgba(0,0,0,.6);
+          width: 420px; height: min(900px, calc(100vh - 56px));
+          flex: none; border-radius: 30px; overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, .12);
+          box-shadow: 0 30px 80px rgba(0, 0, 0, .8);
         }
       }
     </style>
@@ -44,6 +63,6 @@
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/picoyplaca-demo/_expo/static/js/web/index-139542562fe901da89bc4f18d3bc2d8e.js" defer></script>
+  <script src="/picoyplaca-demo/_expo/static/js/web/index-44971f360abb830e79a5eb89c6ff7a6d.js" defer></script>
 </body>
 </html>
